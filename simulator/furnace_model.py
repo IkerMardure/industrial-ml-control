@@ -16,6 +16,9 @@ class Furnace:
     def reset(self) -> float:
         """Resets the furnace to ambient temperature."""
         self.current_temp = self.ambient_temp
+        self.heating_rate = float(np.random.uniform(0.4, 0.6))
+        self.cooling_rate = float(np.random.uniform(0.04, 0.06))
+        self.noise_std = float(np.random.uniform(0.4, 0.6))
         return self.current_temp
 
     def step(self, power: float) -> float:

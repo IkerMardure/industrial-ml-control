@@ -10,7 +10,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 
 
-FEATURE_COLUMNS: Final[list[str]] = ["current_temp", "power"]
+FEATURE_COLUMNS: Final[list[str]] = ["temp_t_minus_2", "temp_t_minus_1", "current_temp","power_t_minus_2","power_t_minus_1", "power"]
 TARGET_COLUMN: Final[str] = "next_temp"
 
 
