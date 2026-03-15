@@ -14,3 +14,5 @@ __pycache__/
 results/*.csv
 results/*.png
 results/*.json
+data/*.csv
+results/*.joblib
